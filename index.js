@@ -12,7 +12,7 @@ app.get('/greeting',(req,res) => {
     const{name} = req.body;
     const{message} = req.body;
 
-    res.send({greeting: `Hello ${name}! `, message:  message})
+    res.send("Hi " + name + " " + message+ " !")
 })
 
 app.listen(process.env.PORT || 3000)
