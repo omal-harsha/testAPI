@@ -8,7 +8,7 @@ app.get('/',(req,res) => {
     res.send("Mr. omal harsha nuwan")
 })
 
-app.get('/greeting',(req,res) => {
+app.post('/greeting',(req,res) => {
     const{name} = req.body;
     const{message} = req.body;
 
